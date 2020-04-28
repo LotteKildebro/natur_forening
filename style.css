@@ -320,6 +320,23 @@ h1{
       background-color: #44BCDD;
   }
   /*---- contact form ---*/
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+  #msg1, #msg2, #msg3, #msg4 {
+      color: red;
+  }
+
   #success-message {
     opacity: 0;
   }
@@ -327,7 +344,9 @@ h1{
   .col-xs-12.col-sm-12.col-md-12.col-lg-12 {
     padding: 0 20% 0 20%;
   }
-  
+  form{
+      margin-bottom: 5em;
+  }
   .margin-top-25 {
     margin-top: 25px;
   }
@@ -337,12 +356,21 @@ h1{
     font-size: 30px;
     font-weight: 300;
   }
+ .checkbox{
+     float: left;
+     display: block;
+ }
   
   .form-group .form-control {
     border-bottom: 1px;
-    border-style: none none solid none;
+    border-style: solid;
     border-radius:0; 
     border-color: #000;
+  }
+  input#cvr.form-control , input#dato.form-control{
+      width: 150px;
+      border-style: solid; 
+      margin: 50px 0px 0px 15px;
   }
   
   .form-group .form-control:focus {
