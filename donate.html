@@ -36,7 +36,7 @@
 
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="billeder/logo.png" alt="logo" width="53px">
                 <p class="pl">Naturvenner</p>
             </a>
@@ -101,7 +101,8 @@
 
                         <label class="form-label" id="pengeLabel" for="penge"></label>
                         <input type="number" class="form-control" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" id="penge" name="penge"
-                            placeholder="indtast beløb i kr" tabindex="3">
+                            placeholder="Indtast beløb kr,-" tabindex="3">
+                        <p id="msg0"></p>
 
                     </div>
                     <div class="form-group">
@@ -119,8 +120,10 @@
 
                     <div class="form-group">
                         <label class="form-label" id="kortLabel" for="kort"></label>
-                        <input type="number" onkeydown="return event.keyCode !== 69 && event.keyCode !== 189" class="form-control" id="kort" name="kort"
-                            placeholder="Kortnummer" tabindex="3" maxlength="16">
+                        <input oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number"
+                            maxlength="16" type="number" class="form-control" id="kort" name="kort" oninput="return maxLength();"
+                            placeholder="kortnummer">
+                        <p id="msg3"></p>
                     </div>
 
                     <div class="form-group">
@@ -130,17 +133,12 @@
                                 maxlength="3" type="number" class="form-control" id="cvr" name="cvr" oninput="return maxLength();"
                                 placeholder="CVR">
 
-                            <!--<form action="/action_page.php">
-                                <label for="username">Username:</label>
-                                <input type="number" id="username" name="username" maxlength="10">
-                                <br>
-                                <br>
-
-                            </form>-->
 
                             <label class="form-label" id="datoLabel" for="dato"></label>
                             <input type="date" class="form-control" id="dato" name="dato" placeholder="Udløbsdato" tabindex="3">
                         </div>
+                        <p id="msg4"></p>
+                        <p id="msg5"></p>
                     </div>
 
 
@@ -172,11 +170,12 @@
         <!-- End row -->
 
         <div class="sec5 ">
-            <h2>Tid til forandring</h2>
+            <h2>Info om donation</h2>
             <div class="container ">
                 <div class="row ">
                     <div class="col-sm ">
-                        <h4>Det hele begyndte da...</h4>
+                        <img src="billeder/leaf.png" alt="blad icon" width="100px">
+                        <h4>Du støtter skoven</h4>
                         <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                             samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte,
                             de tilfældige egenskaber ved noget mv. Ordet natur kommer af latin natura 'fødsel, natur', af
@@ -189,7 +188,8 @@
                             ved noget mv. Ordet natur kommer af latin natura 'fødsel, natur', af natus 'født', af nasci 'fødes'.</p>
                     </div>
                     <div class="col-sm ">
-                        <h4>Natur vennernes sjæl</h4>
+                        <img src="billeder/leaf.png" alt="blad icon" width="100px">
+                        <h4>Frivilliges viljestyrke</h4>
                         <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                             samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte,
                             de tilfældige egenskaber ved noget mv. Ordet natur kommer af latin natura 'fødsel, natur', af
@@ -202,7 +202,8 @@
                             ved noget mv. Ordet natur kommer af latin natura 'fødsel, natur', af natus 'født', af nasci 'fødes'.</p>
                     </div>
                     <div class="col-sm ">
-                        <h4>Skovens fryder</h4>
+                        <img src="billeder/leaf.png" alt="blad icon" width="100px">
+                        <h4>Truede dyr i Danmark</h4>
                         <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                             samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte,
                             de tilfældige egenskaber ved noget mv. Ordet natur kommer af latin natura 'fødsel, natur', af

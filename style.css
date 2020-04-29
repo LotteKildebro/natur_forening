@@ -73,7 +73,7 @@ h1{
 .button {
     background-color: #81a96f; /* Green */
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -87,9 +87,9 @@ h1{
   
   
   .button:hover{
-    background-color: #7a8575; /* Green */
+    background-color: #ffffff; /* Green */
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   /*-----scroll down------*/
   body {
@@ -207,15 +207,24 @@ h1{
     height: auto;
     padding: 3em;
 }
+.sec5 p{
+    padding: 1EM;
+    margin-bottom: 1em;
+}
+border1{
+    border-right: 1px solid #81a96f !important;
+    border-left: 1px solid #81a96f !important;
+    border-bottom: #ffffff00;
+}
 .sec5 img{
-    display: block;
     margin: 0 auto;
+    display: block;
 }
 
 .sec5 h4{
-    text-align: left;
-    margin-top: 3em;
+    text-align: center;
     color:#3a5235;
+   
     
 }
 .sec5 h2{
@@ -223,6 +232,7 @@ h1{
     text-align: center;
     font-size: 7em;
     margin-top: 1em;
+    margin-bottom: .6em;
 }
 
 
@@ -333,9 +343,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-  #msg1, #msg2, #msg3, #msg4 {
+  #msg0,#msg1, #msg2, #msg3, #msg4, #msg5 {
       color: red;
   }
+  
 
   #success-message {
     opacity: 0;
@@ -353,8 +364,8 @@ input[type=number] {
   
   .form-title {
     padding: 25px;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 5em;
+    color:#3a5235;
   }
  .checkbox{
      float: left;
@@ -368,9 +379,15 @@ input[type=number] {
     border-color: #000;
   }
   input#cvr.form-control , input#dato.form-control{
-      width: 150px;
+      width: 155px;
       border-style: solid; 
-      margin: 50px 0px 0px 15px;
+      margin: 30px 0px 0px 15px;
+  }
+  input#penge.form-control {
+      width: 300px;
+      padding: 40px;
+      font-size: 1.5em;
+      
   }
   
   .form-group .form-control:focus {
@@ -424,8 +441,8 @@ input[type=number] {
   
   .btn-mod.btn-border:hover, .btn-mod.btn-border:active, .btn-mod.btn-border:focus, .btn-mod.btn-border:active:focus {
       color: #fff;
-      border-color: #000;
-      background: #000;
+      border-color: #81a96f;
+      background: #81a96f;
       outline: none;
   }
   
@@ -439,4 +456,29 @@ input[type=number] {
           font-size: 20px;
     }
   }
+  /*wvnklqvineklr*/
+  .carousel .carousel-item {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel .carousel-item:first-of-type {
+    background-image: url("https://via.placeholder.com/300.png/f43347/f43347");
+}
+
+.carousel .carousel-item:nth-of-type(2) {
+    background-image: url("http://s9.favim.com/orig/130806/flower-flowers-photography-pink-Favim.com-833641.jpg");
+}
+
+.carousel .carousel-item:last-of-type {
+    background-image: url("https://4.bp.blogspot.com/-pxMLcrD3N7I/UjAMNkqM43I/AAAAAAAAABQ/2-etadUS_48/s640/flowers.jpg");
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+}
+
   

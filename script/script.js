@@ -35,7 +35,7 @@ function validateForm() {
 
     event.preventDefault();
     if (document.myForm.penge.value == "") {
-        alert("indtast beløb ;-) tak");
+        msg0.innerHTML = 'angiv et beløb, tak :-)';
         document.myForm.penge.focus();
         return false;
     }
@@ -51,21 +51,21 @@ function validateForm() {
     }
 
     if (document.myForm.kort.value == "") {
-        alert("Ikke godkendt kortnummer!");
+        msg3.innerHTML = 'angiv kortnummer';
         document.myForm.email.focus();
         return false;
     }
     if (document.myForm.cvr.value == "") {
-        alert("Ikke godkendt cvr!");
+        msg4.innerHTML = 'angiv cvr';
         document.myForm.cvr.focus();
         return false;
     }
     if (document.myForm.dato.value == "") {
-        alert("Ikke godkendt udløbsdato!");
+        msg5.innerHTML = 'angiv en valid dato';
         document.myForm.dato.focus();
         return false;
     }
-    confirm("Tak for donationen!");
+    confirm("Tak for donationen! ");
     window.location.reload();
     return (true);
 

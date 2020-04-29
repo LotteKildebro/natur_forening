@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
         crossorigin="anonymous">
 
-    <title>Natur drengene</title>
+    <title>Naturvenner</title>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -53,29 +53,31 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#omos">Om os</a>
+                        <a class="nav-link" href="#projekt">Projektet</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                            <a class="nav-link" href="#omos">Om os</a>
                             <li class="nav-item">
-                                <a class="nav-link" href="donate.html">Støt her</a>
+                                <a class="nav-link" href="#kontakt">Kontakt</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="donate.html">Støt her</a>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false">
-                                        Ressourcer
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Ressourcer
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                        <a class="dropdown-item" href="https://videnskab.dk/topic/havet">Havet</a>
+                                            <a class="dropdown-item" href="https://videnskab.dk/topic/havet">Havet</a>
 
-                                        <a class="dropdown-item" href="https://www.affald.dk/da/ungdomsuddannelser/plast/artikler/664-mikroplast.html">Mikroplast</a>
+                                            <a class="dropdown-item" href="https://www.affald.dk/da/ungdomsuddannelser/plast/artikler/664-mikroplast.html">Mikroplast</a>
 
-                                        <a class="dropdown-item" href="https://lf.dk/viden-om/klima/hvad-er-co2">CO2 udslip</a>
+                                            <a class="dropdown-item" href="https://lf.dk/viden-om/klima/hvad-er-co2">CO2 udslip</a>
 
-                                        <a class="dropdown-item" href="https://www.dn.dk/bliv-frivillig/">Hvad kan jeg gøre?</a>
+                                            <a class="dropdown-item" href="https://www.dn.dk/bliv-frivillig/">Hvad kan jeg gøre?</a>
 
 
-                                    </div>
+                                        </div>
 
                 </ul>
             </div>
@@ -95,7 +97,7 @@
                 <h1>Støt os ved hjælp af donation</h1>
                 <br>
                 <div class="mar ">
-                    <a href="# " class="button ">STØT OS HER</a>
+                    <a href="donate.html" class="button ">STØT OS HER</a>
 
                 </div>
                 <br>
@@ -112,11 +114,12 @@
         </div>
 
     </div>
-    <div class="sec5 ">
+    <div id="projekt" class="sec5 ">
         <h2>Projektet</h2>
         <div class="container ">
             <div class="row ">
                 <div class="col-sm ">
+                    <img src="billeder/leaf.png" alt="blad icon" width="100px">
                     <h4>Det hele begyndte da...</h4>
                     <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                         samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte, de
@@ -129,7 +132,8 @@
                         det overnaturlige, det tillærte, de tilfældige egenskaber ved noget mv. Ordet natur kommer af latin
                         natura 'fødsel, natur', af natus 'født', af nasci 'fødes'.</p>
                 </div>
-                <div class="col-sm ">
+                <div class="col-sm border1">
+                    <img src="billeder/leaf.png" alt="blad icon" width="100px">
                     <h4>Natur vennernes sjæl</h4>
                     <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                         samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte, de
@@ -143,6 +147,7 @@
                         natura 'fødsel, natur', af natus 'født', af nasci 'fødes'.</p>
                 </div>
                 <div class="col-sm ">
+                    <img src="billeder/leaf.png" alt="blad icon" width="100px">
                     <h4>Skovens fryder</h4>
                     <p>Natur er et flertydigt ord, der antager særlige betydninger, alt efter om det modstilles med kultur,
                         samfund, civilisation, kunst, kunstighed, bevidsthed, moral, det overnaturlige, det tillærte, de
@@ -160,6 +165,26 @@
         <img src="billeder/tree.png" width="200px" alt="træ">
     </div>
 
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active"></div>
+            <div id="target" class="carousel-item"></div>
+            <div class="carousel-item"></div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
     <footer id="footer " class="d-flex-column text-center ">
